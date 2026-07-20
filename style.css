@@ -1,0 +1,223 @@
+/* =======================
+   إعدادات عامة
+======================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f8f3;
+    color:#333;
+}
+
+/* =======================
+   Header
+======================= */
+
+header{
+    background:linear-gradient(90deg,#2E7D32,#1976D2);
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* =======================
+   Hero
+======================= */
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1464226184884-fa280b87c399") center/cover;
+}
+
+.hero h2{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+}
+
+/* =======================
+   Buttons
+======================= */
+
+.btn,
+button{
+    background:#2E7D32;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:17px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover,
+button:hover{
+    background:#1B5E20;
+}
+
+/* =======================
+   Login & Register
+======================= */
+
+.container{
+    width:100%;
+    max-width:420px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.container h2{
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+/* =======================
+   Cards
+======================= */
+
+.cards{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2E7D32;
+    margin-bottom:10px;
+}
+
+/* =======================
+   About & Contact
+======================= */
+
+.content{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.content h2{
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+.contact-info{
+    margin-top:20px;
+    text-align:center;
+}
+
+/* =======================
+   Footer
+======================= */
+
+footer{
+    background:#2E7D32;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* =======================
+   Responsive
+======================= */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.container{
+    width:95%;
+}
+
+}
